@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* PC버전과 모바일버전 공통부문 */
+/* visual */
+#visual {
+  border: 1px solid red;
+  /* 박스크기 가늠하기 위해 boder */
+  margin: 0px auto;
+  height: 400px;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#visual div {
+  position: absolute;
+  right: 20px;
+  /* 오른쪽에서부터 20px 떨어지게 */
+  bottom: 50px;
+  /* 바닥으로부터 50px 떨어지게 */
+  text-align: right;
+}
+#visual h2 {
+  color: #fff;
+}
+#visual h3 {
+  color: #ff0;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* header */
+header {
+  background-color: #000;
+  color: #fff;
+  width: 1200px;
+  margin: 0px auto;
+  /* 너비값 1200px를 넣어주면 왼쪽으로 가니 가운데로 */
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  padding: 15px;
+  /* 글씨가 너무 딱 붙어서 여백 줌 */
+  display: block;
+  /* a가 인라인요소라서 display: block을 줌 */
+}
+header ul a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* container */
+#container {
+  border: 1px solid red;
+  margin: 0px auto;
+}
+#container #left p {
+  margin: 20px 0px;
+  line-height: 20px;
+  /* 가독성을 높이기 위해 */
+}
+#container #left img {
+  width: 100%;
+}
+/* --------------------PC버전 ----------------------------*/
+/* 최소 너비가 1220px. @media screen and에서 screen and는 생략해도 됨.  width값 1200보다 크게 써야함. 왜냐하면 스크롤바 크기가 있으니 */
+@media screen and (min-width: 1220px) {
+  /* visual */
+  #visual {
+    width: 1200px;
+    /* 1200px로 하기로 함 */
+  }
+
+  /* PC버전 */
+  /* conainer */
+  #container {
+    width: 1200px;
+  }
+  #container section {
+    display: flex;
+    font-size: 13px;
+  }
+
+  #container #left {
+    background-color: #ccc;
+    padding: 40px 20px;
+    width: 80%;
+    /* 왼쪽의 너비값을 더 크게 주기 위해 */
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+  #container #right {
+    background-color: lightgreen;
+    width: 20%;
+    /* 왼쪽의 너비값을 더 크게 주기 위해 */
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  /* right */
+  #container #right p:first-child {
+    font-weight: bold;
+    margin: 40px;
+  }
+  #container #right img {
+    width: 100%;
+  }
+  #container #right li {
+    margin: 20px 0px;
+  }
+}
+
+/* ------------------모바일버전-------------------- */
+@media (max-width: 1220px) {
+  /* 모바일버전은 가로방향 생각해야함 */
+  /* visual */
+  #visual {
+    width: 90%;
+  }
+
+  /* header */
+  header {
+    width: 90%;
+    /* visual과 같은 너비값 지정 */
+  }
+  /* conainer */
+  #container {
+    width: 90%;
+    /* 모바일이라서 PC버전과 다르게 */
+    border: 1px solid red;
+    margin: 0px auto;
+  }
+  #container section {
+    /* display: flex; 모바일은 나란히 오게하지 않을거라서 */
+    font-size: 13px;
+  }
+
+  #container #left {
+    background-color: #ccc;
+    padding: 40px 20px;
+    width: 100%;
+    /* 왼쪽의 너비값을 더 크게 주지 않아도 되니 100% */
+    /* padding-right: 50px; */
+    box-sizing: border-box;
+  }
+  #container #right {
+    background-color: lightgreen;
+    /* width: 20%; */
+    /* pc버전과 다름*/
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  /* right */
+
+  #container #right ul {
+    display: flex;
+    gap: 20px;
+  }
+  #container #right p:first-child {
+    font-weight: bold;
+    margin: 40px;
+  }
+  #container #right img {
+    width: 100%;
+  }
+  #container #right li {
+    margin: 20px 0px;
+    width: calc(100% / 3);
+    /* width: calc((100%-20px) / 3);을 안쓴 이유는 flex-wrap을 사용하지 않아서 */
+    /* pc버전과 다름*/
+  }
+}
