@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* PC와 모바일 공통 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 16px;
+  font-weight: normal;
+}
+header h1 a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+header h1 a {
+  padding: 15px;
+  display: block;
+}
+
+#visual {
+  background-image: url(../img/imgi_12_parallax1.jpg);
+  height: 100vh;
+}
+
+/* PC버전 */
+@media (min-width: 1220px) {
+  /* header */
+  header .menu {
+    display: flex;
+    align-items: center;
+  }
+  header ul {
+    display: flex;
+  }
+  ul a:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+  ul a {
+    padding: 15px;
+  }
+  .bar {
+    display: none;
+  }
+  .search i:hover {
+    background-color: red;
+    color: #000;
+  }
+  .search i {
+    padding: 15px;
+    display: block;
+  }
+}
+
+/* 모바일버전 */
+@media (max-width: 1220px) {
+  /* header */
+  header {
+  }
+  header nav {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .bar i:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .bar i {
+    padding: 15px;
+    display: block;
+  }
+}

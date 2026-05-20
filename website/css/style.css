@@ -1,0 +1,725 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* PC와 모바일 공통부문 */
+body {
+  color: #888;
+}
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 16px;
+  font-weight: normal;
+  align-items: center;
+}
+header h1 a {
+  display: block;
+  padding: 15px;
+}
+header h1 a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+/* visual */
+#visual {
+  height: 100vh;
+  background-image: url(../img/imgi_12_parallax1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.7;
+}
+#visual div {
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+}
+
+/*container*/
+/*con01*/
+.con01 {
+  width: 1200px;
+  /* border: 1px solid red; */
+  margin: 0px auto;
+  line-height: 25px;
+}
+.con01 .me {
+  text-align: center;
+  font-size: 25px;
+}
+
+.con01 .left {
+  /* border: 1px solid red; */
+  /* padding-left: 50px; */
+  box-sizing: border-box;
+}
+.con01 .left p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.con01 .left img {
+  width: 100%;
+  opacity: 0.7;
+}
+.con01 .left img:hover {
+  opacity: 1;
+}
+.con01 .skill ul li:first-child {
+  background-color: #666;
+  text-align: center;
+  color: #fff;
+}
+.con01 .skill ul li:last-child {
+  background-color: #ccc;
+}
+
+/* PC버전 */
+/* header */
+@media (min-width: 1220px) {
+  /* header */
+  header .bar {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+  }
+
+  header li a:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+  header a {
+    padding: 15px;
+    display: block;
+  }
+
+  header .search i:hover {
+    background-color: red;
+    color: #000;
+  }
+  header .search i {
+    padding: 15px;
+    display: block;
+  }
+  /* visual */
+
+  /*container*/
+  /*con01*/
+
+  .con01 {
+    width: 1200px;
+    /* border: 1px solid red; */
+    margin: 0px auto;
+    line-height: 25px;
+  }
+  .con01 .me {
+    text-align: center;
+    font-size: 25px;
+  }
+  .con01 .photo {
+    text-align: center;
+    font-style: italic;
+    margin: 15px 0px;
+  }
+
+  .con01 .wrap {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .con01 .left {
+    /* border: 1px solid red; */
+    padding-left: 50px;
+    box-sizing: border-box;
+  }
+  .con01 .left p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .con01 .left img {
+    width: 100%;
+    opacity: 0.7;
+  }
+  .con01 .left img:hover {
+    opacity: 1;
+  }
+  .con01 .wrap div {
+    width: calc(100% / 2);
+  }
+
+  /* section con01 good */
+  /*good*/
+  .con01 .good > p {
+    text-align: center;
+  }
+  .con01 .skill p {
+    letter-spacing: 10px;
+  }
+
+  .con01 .skill ul li {
+    height: 40px;
+    line-height: 40px;
+  }
+  .con01 .skill ul {
+    display: flex;
+  }
+  .con01 .skill ul li:first-child {
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+  }
+  .con01 .skill ul li:last-child {
+    background-color: #ccc;
+  }
+  .con01 .skill .num01 li:first-child {
+    width: 90%;
+  }
+  .con01 .skill .num01 li:last-child {
+    width: 10%;
+  }
+
+  .con01 .skill .num02 li:first-child {
+    width: 85%;
+  }
+  .con01 .skill .num02 li:last-child {
+    width: 15%;
+  }
+  .con01 .skill .num03 li:first-child {
+    width: 75%;
+  }
+  .con01 .skill .num03 li:last-child {
+    width: 25%;
+  }
+  .con01 .good {
+    margin-bottom: 50px;
+  }
+  /* con02 */
+  .con02 ul {
+    display: flex;
+    background-color: #666;
+    color: #fff;
+  }
+  .con02 li {
+    width: calc(100% / 4);
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .con02 div {
+    height: 500px;
+    background-image: url(../img/imgi_13_parallax2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .con02 div p {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* con03 */
+  .con03 {
+    width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .work {
+    font-size: 25px;
+    text-align: center;
+  }
+  .txt03 {
+    font-style: italic;
+    line-height: 30px;
+    margin: 30px 0px;
+    text-align: center;
+  }
+  .con03 ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .con03 li {
+    width: calc((100% - 60px) / 4);
+  }
+
+  .con03 img {
+    width: 100%;
+    opacity: 0.7;
+  }
+  .con03 img:hover {
+    opacity: 1;
+  }
+  .con03 div {
+    background-color: #ccc;
+    color: #000;
+    margin: 30px auto;
+    width: 150px;
+    padding: 20px 0px;
+    cursor: pointer;
+  }
+  .con03 div:hover {
+    background-color: #888;
+  }
+  .con04 {
+    height: 500px;
+    background-image: url(../img/imgi_14_parallax3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .con04 div p {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* .con05 */
+  .con05 {
+    width: 1200px;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+  }
+  .con05 img {
+    width: 400px;
+    /* PC버전은 고정으로 들어가기로해서 */
+    border-radius: 10px;
+  }
+  .con05 > div {
+    display: flex;
+    /* div의 자식이 하나라서 > 이용 */
+    gap: 50px;
+  }
+  .con05 .right {
+    /* background-color: #ccc; */
+    width: 100%;
+  }
+  .con05 .right ul i {
+    margin-right: 20px;
+  }
+  .con05 .right li {
+    margin: 10px 0px;
+  }
+  .con05 input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .con05 .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .con05 .form li {
+    width: calc((100% - 10px) / 2);
+  }
+  .con05 .form li:last-child {
+    width: 100%;
+  }
+  .con05 .right p {
+    margin: 20px 0px;
+  }
+  .con05 .send {
+    background-color: #000;
+    color: #fff;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+  }
+  .con05 .btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* footer */
+  footer {
+    background-color: #888;
+    text-align: center;
+    padding: 50px 0px;
+    color: #fff;
+  }
+  .top {
+    background-color: #fff;
+    color: #888;
+    width: 100px;
+    margin: 0px auto;
+    padding: 10px 10px;
+  }
+  .sns {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    font-size: 24px;
+  }
+
+  .sns li i:hover {
+    color: #ccc;
+    cursor: pointer;
+    /* 마우스 커서를 손가락 모양으로 변경 */
+  }
+  .power a {
+    text-decoration: underline;
+    padding: 0px 4px;
+  }
+}
+/* 모바일 버전 */
+/* 모바일 버전 */
+/* 모바일 버전 */
+/* 모바일 버전 */
+/* 모바일 버전 */
+/* 모바일 버전 */
+/* 모바일 버전 */
+/* 모바일 버전 */
+
+@media (max-width: 1220px) {
+  /* header */
+  header {
+    /* background-color: #ccc; 배경색은 없음.  배경이미지 색이 보이는것임*/
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  header .search {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+  }
+  header h1 a {
+    display: block;
+    padding: 15px;
+  }
+  header h1 a:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+  header .bar {
+    padding: 15px;
+    cursor: pointer;
+  }
+  .bar:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  /* visual */
+  #visual span {
+    display: none;
+  }
+  .con01 {
+    width: 90%;
+  }
+  .txt01 {
+    margin: 15px 0px;
+  }
+  .con01 .photo {
+    text-align: center;
+    font-style: italic;
+    margin: 50px 0px;
+  }
+  .left img {
+    width: 100%;
+    opacity: 1;
+  }
+  .con01 .right {
+    display: none;
+  }
+  /* section con01 good */
+  /*good*/
+  .good {
+    margin-bottom: 50px;
+  }
+  .con01 .good > p {
+    text-align: center;
+    margin: 50px 0px;
+  }
+
+  .con01 .skill p {
+    letter-spacing: 10px;
+  }
+
+  .con01 .skill ul li {
+    height: 40px;
+    line-height: 40px;
+  }
+  .con01 .skill ul {
+    display: flex;
+  }
+  .con01 .skill ul li:first-child {
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+  }
+  .con01 .skill ul li:last-child {
+    background-color: #ccc;
+  }
+  .con01 .skill .num01 li:first-child {
+    width: 90%;
+  }
+  .con01 .skill .num01 li:last-child {
+    width: 10%;
+  }
+
+  .con01 .skill .num02 li:first-child {
+    width: 85%;
+  }
+  .con01 .skill .num02 li:last-child {
+    width: 15%;
+  }
+  .con01 .skill .num03 li:first-child {
+    width: 75%;
+  }
+  .con01 .skill .num03 li:last-child {
+    width: 25%;
+  }
+
+  /* con02 */
+  /* con02 */
+  .con02 ul {
+    /* display: flex; */
+    /* 모바일에서는 삭제 */
+    background-color: #666;
+    color: #fff;
+  }
+  .con02 li {
+    /* width: calc(100% / 4); */
+    /* 모바일에서는 삭제 */
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .con02 div {
+    height: 500px;
+    background-image: url(../img/imgi_13_parallax2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .con02 div p {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* con03 */
+  /* con03 */
+  .con03 {
+    width: 90%;
+    /* 모바일에서는 변경 */
+    /* width: 1200px; */
+    margin: 0px auto;
+    text-align: center;
+  }
+  .con3 .work {
+    font-size: 25px;
+  }
+  .con03 .txt03 {
+    font-style: italic;
+    line-height: 30px;
+    margin: 30px 0px;
+  }
+  /* .con03 ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+    /* 모바일에서 삭제 */
+  /* .con03 li {
+    width: calc((100% - 60px) / 4);
+  } */
+  /* 모바일에서 삭제 */
+
+  .con03 img {
+    width: 100%;
+    opacity: 0.7;
+    display: block;
+  }
+  .con03 img:hover {
+    opacity: 1;
+  }
+  .con03 div {
+    background-color: #ccc;
+    color: #000;
+    margin: 30px auto;
+    width: 150px;
+    padding: 20px 0px;
+    cursor: pointer;
+  }
+  .con03 div:hover {
+    background-color: #888;
+  }
+  .con04 {
+    height: 500px;
+    background-image: url(../img/imgi_14_parallax3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .con04 div p {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* .con05 */
+  .con05 {
+    width: 90%;
+    /* 모바일에서 추가 */
+    margin: 50px auto;
+    /* border: 1px solid red; */
+
+    text-align: center;
+    /* 모바일에서 추가 */
+  }
+  .add {
+    text-align: left;
+  }
+  /* 모바일에서 추가 */
+  .note {
+    text-align: left;
+  }
+  /* 모바일에서 추가 */
+  .txt03 {
+    margin: 20px 0px;
+  }
+  .con05 img {
+    width: 400px;
+    /* PC버전은 고정으로 들어가기로해서 */
+    border-radius: 10px;
+  }
+  /* .con05 > div {
+    display: flex;
+    /* div의 자식이 하나라서 > 이용 */
+  /* gap: 50px;
+  } */
+  /* 모바일에서는 한줄로 나와서 주석처리함 */
+  */ .con05 .right {
+    /* background-color: #ccc; */
+    width: 100%;
+  }
+  .con05 .right ul i {
+    margin-right: 20px;
+  }
+  .con05 .right li {
+    margin: 10px 0px;
+  }
+  .con05 input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* .con05 .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .con05 .form li {
+    width: calc((100% - 10px) / 2);
+  }
+  .con05 .form li:last-child {
+    width: 100%;
+  } */
+  /* 모바일에서는 한줄로 나와서 주석처리함 */
+
+  .con05 .right p {
+    margin: 20px 0px;
+  }
+  .con05 .send {
+    background-color: #000;
+    color: #fff;
+    width: 180px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+  }
+  .con05 .btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* footer */
+  /* footer */
+  footer {
+    background-color: #888;
+    text-align: center;
+    padding: 50px 0px;
+    color: #fff;
+  }
+  footer:hover {
+    background-color: #000;
+  }
+  .top {
+    background-color: #fff;
+    color: #888;
+    width: 100px;
+    margin: 0px auto;
+    padding: 10px 10px;
+  }
+  .sns {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    font-size: 24px;
+  }
+
+  .sns li i:hover {
+    color: #ccc;
+    cursor: pointer;
+    /* 마우스 커서를 손가락 모양으로 변경 */
+  }
+  .power a {
+    text-decoration: underline;
+    padding: 0px 4px;
+  }
+}
