@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* header */
+header {
+  width: 100%;
+  background-color: #fff;
+  /* margin: 0px auto; */
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 5px #ccc; /* x축, y축, 그림자번짐, 색깔 */
+  position: sticky; /* 메뉴 고정위해 */
+  top: 0;
+  /* 메뉴 고정위해 */
+  z-index: 10;
+  /* 메뉴 고정위해 */
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header h1 {
+  font-size: 15px;
+  font-weight: normal;
+}
+header a:hover {
+  background-color: #888;
+}
+header a {
+  padding: 10px;
+  display: block;
+}
+
+/* visual */
+.visual {
+  width: 1200px;
+  height: 700px;
+  margin: 0px auto;
+  background-image: url(../img/hamburger.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.visual p {
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: #888;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* container */
+.container {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+/* 첫번째 section */
+.con01 ul {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  padding: 100px 0px;
+}
+.con01 li {
+  width: calc(100% / 2);
+}
+.con01 img {
+  width: 100%;
+  opacity: 0.7;
+}
+.con01 h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.con01 .txt01 {
+  font-size: 25px;
+  font-weight: normal;
+  padding: 10px 20px;
+}
+.con01 .txt02 {
+  font-size: 20px;
+  padding: 20px 20px;
+}
+.con01 .txt03 {
+  color: #888;
+}
+
+/* 두번째 section */
+.con02 ul {
+  display: flex;
+  gap: 20px;
+  padding: 100px 0px;
+  border-top: 1px solid gray;
+}
+.con02 li {
+  width: calc(100% / 2);
+}
+.con02 img {
+  width: 100%;
+  opacity: 0.7;
+}
+.con02 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 7px;
+}
+.con02 .txt01 {
+  margin-bottom: 50px;
+}
+.con02 .txt02 {
+  margin-bottom: 50px;
+}
+.con02 .txt03 {
+  margin-bottom: 50px;
+}
+.con02 .txt04 {
+  margin-bottom: 50px;
+}
+.con02 h3:nth-child(1) {
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+.con02 p:nth-child(2) {
+  color: #888;
+}
+
+/* 세번째 section */
+.con03 h2 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+  border-top: 1px solid gray;
+}
+.con03 .txt01 {
+  margin-bottom: 30px;
+}
+.con03 .txt02 {
+  color: rgb(4, 61, 34);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.con03 .txt03 {
+  margin-bottom: 30px;
+}
+.con3 div a {
+  padding: 10px;
+  display: block;
+}
+.con03 li {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+.con03 li:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+.con03 .send {
+  padding-top: 20px;
+}
+.con03 .send a {
+  padding: 10px;
+  display: inline-block;
+  background-color: #eee;
+}
+.con03 .send a:hover {
+  background-color: #888;
+}
