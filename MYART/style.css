@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* header */
+header {
+  width: 1200px;
+  /* 기본적으로 1200을 준다 */
+  margin: 50px auto;
+  /* 너비값이 있으니 margin */
+  /* background-color: #ff0; */
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+}
+/* 왼쪽 로고 */
+header h1 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+/* 오른쪽 메뉴 */
+header nav {
+  font-size: 25px;
+}
+
+/* hearder에 있는 a MY ART 링크 호버효과 */
+header a {
+  padding: 20px;
+  display: block;
+  /* 공간이 커짐 */
+}
+
+header a:hover {
+  background-color: #ccc;
+}
+
+/* visual 사진들*/
+.visual {
+  width: 1200px;
+
+  margin: 0px auto;
+}
+
+.visual ul {
+  display: flex;
+}
+.visual li {
+  width: calc(100% / 2);
+}
+.visual img {
+  width: 100%;
+  display: block;
+}
+
+/* container */
+.container {
+  background-color: #ccc;
+  /* width: 1300px;
+  margin: 0px auto; */
+}
+section {
+  width: 1200px;
+  /* background-color: #ff0; */
+  margin: 0px auto;
+  text-align: center;
+  padding: 70px 0px 30px;
+}
+section .about {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+section img {
+  width: 200px;
+}
+
+section .txt01 {
+  font-size: 13px;
+  color: #444;
+  margin: 30px 0px;
+}
+section .txt02 {
+  font-size: 25px;
+  color: red;
+  margin: 20px 0px;
+}
+
+/* box */
+.box {
+  border: 1px solid #444;
+  height: 30px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+section li {
+  font-size: 13px;
+  font-weight: bold;
+}
+section div a {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 0px;
+  display: block;
+}
+
+/* footer */
+footer {
+  background-color: #ccc;
+  padding: 50px 0px;
+}
+.powered {
+  text-align: center;
+}
+footer p {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+span {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: green;
+}
