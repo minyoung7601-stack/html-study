@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0px auto;
+}
+header nav a {
+  padding: 15px;
+  display: block;
+}
+header nav a:hover {
+  background-color: #ccc;
+}
+
+/* container */
+container {
+  width: 1150px;
+  margin: 0px auto;
+}
+
+/* con01 */
+.con01 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.con01 li {
+  width: calc((100% - 30px) / 4);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.con01 img {
+  width: 100%;
+  display: block;
+}
+.con01 .txt01 {
+  font-size: 22px;
+  margin: 10px 0px 20px;
+  line-height: 30px;
+}
+
+/* con02 */
+.con02 {
+  display: flex;
+  justify-content: center;
+}
+.con02 a {
+  padding: 10px;
+  display: block;
+}
+.con02 li:nth-child(2) a {
+  background-color: #000;
+  color: #fff;
+}
+.con02 li:hover a {
+  background-color: #000;
+  color: #fff;
+}
+section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 50px;
+}
+
+/* con03 */
+.con03 {
+  width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.con03 img {
+  width: 100%;
+  margin: 20px 0;
+}
+.con03 h3 {
+  font-size: 20px;
+}
+.con04 h4 {
+  font-style: italic;
+  color: #333;
+}
+
+/* footer */
+footer {
+  display: flex;
+  width: 1150px;
+  margin: 0px auto;
+  font-size: 12px;
+  gap: 15px;
+}
+footer .txt02 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+footer .txt03 {
+  margin: 15px 0px;
+  line-height: 20px;
+}
+.foot01 a {
+  text-decoration: underline;
+}
+.foot03 span {
+  background: #ccc;
+  color: #fff;
+  margin: 10px 5px;
+  display: inline-block;
+  padding: 2px 4px;
+}
+.foot03 .travel {
+  background-color: #000;
+}
+.foot02 li {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.foot02 li:hover {
+  background-color: #ccc;
+}
+.foot02 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.foot01,
+.foot02,
+.foot03 {
+  width: calc(100% / 3);
+}
+.foot02 li:nth-child(1) {
+  border-bottom: 1px solid #ccc;
+}
+.foot02 .txt04 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}

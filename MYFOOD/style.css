@@ -1,0 +1,191 @@
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* header */
+header {
+  display: flex;
+  /* 나란히 */
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0px auto;
+  /* 너비값이 있으면 margin으로 가운데로 정렬 */
+  /* background-color: gray; */
+}
+
+header nav a {
+  /* background-color: #ccc; */
+  padding: 15px;
+  display: block;
+  /* a인 인라인요소에 padding값이 먹히려면 display block을 써야함 */
+}
+header nav a:hover {
+  background-color: #ccc;
+}
+
+/* container */
+.container {
+  /* border: 1px solid red; */
+  width: 1150px;
+  /* header보다 적어서 너비를 조금 줄임 */
+  margin: 0px auto;
+  /* 가운데 정렬 */
+}
+
+/* con01 */
+.con01 {
+  display: flex;
+  /* ul의 li들을 나란히 */
+  flex-wrap: wrap;
+  /* 줄바꿈. display: 와 같이 씀 */
+  gap: 10px;
+}
+.con01 li {
+  width: calc((100% - 30px) / 4);
+  /* 연산자는 한칸씩 띄어서 써야함
+  width:1150 
+  gap:10px이 3개이니 30px
+  음식 이미지 너비조절해서 1줄에 4개씩 보여줌 */
+  text-align: center;
+  margin-bottom: 40px;
+}
+.con01 img {
+  width: 100%;
+  display: block;
+}
+.con01 .txt01 {
+  font-size: 22px;
+  margin: 10px 0px 20px;
+  line-height: 30px;
+  /* 줄간격이 벌어지도록 */
+}
+
+/* con02 */
+.con02 {
+  display: flex;
+  justify-content: center;
+  /* 그 줄의 가운데로 box(메뉴들이)가 놓인다. */
+}
+.con02 a {
+  padding: 10px;
+  /* 마우스에 커서를 댔을때 전체 선택되는걸보고 padding으로 해야함. gap이 아님 */
+  display: block;
+  /* display: block;과 display: inline-block;의 가장 결정적인 차이는  */
+  /* **"옆에 누가 올 수 있느냐"**와 **"줄바꿈 여부"**입니다. */
+  /* 쉽게 요약하자면, **block은 욕심쟁이(한 줄 독점)**이고,  */
+  /* **inline-block은 협조가 가능한 박스(옆으로 나란히)**입니다. */
+}
+.con02 li:nth-child(2) a {
+  background-color: #000;
+  color: #fff;
+}
+/* ul안에서 두번째 li a에 */
+
+.con02 li:hover a {
+  background-color: #000;
+  color: #fff;
+}
+section {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 50px;
+}
+
+/* con03 About Me  */
+.con03 {
+  width: 1000px;
+  /* man 구역 가운데 정렬하려면 박스 자체에 너비를 주고  */
+  margin: 80px auto;
+  /* 위아래 여백을 주고 좌우는 auto로 해서 가운데로 보냄 */
+  text-align: center;
+  /* 태그 모두 가운데 정렬 */
+}
+
+.con03 img {
+  width: 100%;
+  margin: 20px 0;
+}
+.con03 h3 {
+  font-size: 20px;
+}
+.con03 h4 {
+  font-style: italic;
+  color: #333;
+}
+.con03 p {
+  color: #333;
+  margin: 20px 0;
+}
+
+/* footer */
+footer {
+  /* background-color: #666; */
+  display: flex;
+  width: 1150px;
+  margin: 0px auto;
+  /* border: 1px solid red; */
+  font-size: 12px;
+  gap: 15px;
+}
+footer .txt02 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+footer .txt03 {
+  margin: 15px 0px;
+  line-height: 20px;
+}
+.foot01 a {
+  text-decoration: underline;
+}
+.foot03 span {
+  background-color: #ccc;
+  color: #fff;
+  margin: 10px 5px;
+  display: inline-block;
+  /* span에 여백이 적용되도록 inline-block적용 */
+  padding: 2px 4px;
+}
+.foot03 .travel {
+  background-color: #000;
+}
+
+.foot02 li {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+}
+.foot02 li:hover {
+  background-color: #ccc;
+}
+
+.foot02 img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* 이미지 비율이 깨지지 않게 유지 */
+}
+.foot01,
+.foot02,
+.foot03 {
+  width: calc(100% / 3);
+}
+.foot02 li:nth-child(1) {
+  border-bottom: 1px solid #ccc;
+  /* ul안에서 첫번째 li 아래에만 선이 있게 */
+}
+
+.foot02 .txt04 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
