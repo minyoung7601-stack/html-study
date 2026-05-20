@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* header */
+/* pc버전 */
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    padding: 30px 0px;
+  }
+
+  header div {
+    width: 1200px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  header .pc ul {
+    display: flex;
+    gap: 20px;
+  }
+  header .mo {
+    display: none;
+  }
+
+  header li:hover {
+    color: #000;
+  }
+}
+
+/* 모바일버전 */
+@media (max-width: 1200px) {
+  header .pc {
+    display: none;
+  }
+  header div {
+    width: 90%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+  }
+  header {
+    background-color: green;
+    color: #fff;
+    padding: 30px 0px;
+  }
+}

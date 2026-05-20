@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* footer의 PC버전과 모바일버전이 공통이여서 바깥으로 뺌 */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+}
+footer .copy {
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* pc버전 */
+/* header */
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0px;
+  }
+
+  header div {
+    width: 1200px;
+    border: 1px solid red;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    /* 요안도라 글씨와 맞추기위해 세로로 가운데 */
+    justify-content: space-between;
+  }
+  header .pc ul {
+    display: flex;
+    gap: 20px;
+  }
+  header .mo {
+    display: none;
+  }
+
+  header li:hover {
+    color: orange;
+  }
+
+  /* visual */
+  /* pc버전 */
+  .visual {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+  }
+
+  .visual P {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* /Pc버전 * container */
+
+  /* container left */
+  .container {
+    width: 1200px;
+    border: 1px solid red;
+    margin: 50px auto;
+    word-break: keep-all;
+    /* 단어 단위로 줄바꿈이 이뤄지게 */
+  }
+  .container section {
+    display: flex;
+    gap: 100px;
+  }
+  .container .left h2 {
+    font-size: 20px;
+  }
+  .container .left h3 {
+    font-size: 16px;
+    margin: 15px 0px;
+  }
+  .container .left p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 23px;
+    /* 줄간격 line-height: ; */
+  }
+
+  /* container right */
+  .container .right img {
+    display: block;
+  }
+  /* 사진이미지가 모바일엔 붙는데 PC버전엔 안붙어서 
+  .container .right img css 추가함 */
+  .right li {
+    margin-bottom: 15px;
+  }
+
+  .right li:last-child {
+    margin-bottom: 0px;
+    /* 마지막 이미지의 마진은 없애고 싶어서.  nth-child(숫자)대신 마지막 이미지의 마진 last-child로도 사용*/
+  }
+}
+
+/* 모바일버전 */
+/* header */
+@media (max-width: 1200px) {
+  header .pc {
+    display: none;
+  }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border: 1px solid red;
+    margin: 0px auto;
+  }
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0px;
+  }
+
+  /* visual */
+  /* 모바일버전 */
+  .visual {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+  }
+
+  .visual P {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* container */
+  /* container left */
+  .container {
+    width: 90%;
+    border: 1px solid red;
+    margin: 50px auto;
+  }
+  .container .left h2 {
+    font-size: 20px;
+  }
+  .container .left h3 {
+    font-size: 16px;
+    margin: 15px 0px;
+  }
+  .container .left p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 23px;
+    /* 줄간격 line-height: ; */
+  }
+  /* container right */
+  .container .right {
+    display: flex;
+    gap: 20px;
+  }
+  .right li {
+    width: calc(100% / 3);
+  }
+  .right li img {
+    width: 100%;
+    display: block;
+  }
+}
