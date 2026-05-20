@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* width갑에 padding이 포함되게 box-sizing: ; */
+  word-break: keep-all;
+  /* 모바일로 바뀌어도 글이 자연스럽게되도록 */
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+body {
+  font-family: "Work Sans", "Nanum Gothic", sans-serif;
+}
+
+/*container*/
+/*con01*/
+.con01 {
+  margin: 3rem auto;
+  /* border: 1px solid red;*/
+}
+.con01 .seller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.con01 .seller .txt01 {
+  font-size: 2rem;
+  /* font-family: "Work Sans", sans-serif;*/
+}
+.con01 .seller .txt02 {
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+.con01 .seller .right {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.con01 .seller .right li {
+  background-color: #eee;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+/*.con01 list*/
+.con01 .list {
+  /* width: 65%; */
+  /* margin: 0px auto; */
+  overflow: hidden;
+}
+
+.con01 .list ul {
+  width: 100%;
+  /* width: 1200px; */
+  display: flex;
+  gap: 10px;
+  border: 1px solid red;
+}
+.con01 .list li {
+  /* width: calc(100% / 4); */
+}
+/*썸네일*/
+.list .img-view {
+  width: 100%;
+}
+.thumbnail {
+  position: relative;
+  margin-bottom: 1rem;
+}
+/*장바구니담기*/
+.thumbnail div {
+  background-color: #fff;
+  font-size: 0.8rem;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0px;
+  position: absolute;
+  left: 50%;
+  bottom: 1.2rem;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+/*장바구니담기 보이게하기*/
+.list li:hover .thumbnail div {
+  opacity: 1;
+}
+
+.thumbnail div img {
+  width: 1.2rem;
+}
+/*heart*/
+.heart {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  opacity: 0.3;
+}
+
+/*description*/
+.description {
+  color: #666;
+  font-size: 0.7rem;
+}
+.description p:first-child {
+  font-weight: bold;
+}
+.description p:nth-child(2) {
+  margin: 0.5rem 0px 1rem;
+}
+.description p:last-child {
+  font-size: 0.9rem;
+}
+
+.description .sale {
+  color: orange;
+  font-weight: bold;
+}
+.description .cost {
+  text-decoration: line-through;
+}
+/* con01 끝*/
+
+/* pc버전 */
+@media (min-width: 1025px) {
+  .con01 {
+    max-width: 1200px;
+  }
+  .con01 .list li {
+    flex: 1 1 0;
+    /* 늘리고 줄이고 */
+  }
+}
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .con01 {
+    max-width: 100%;
+  }
+  .con01 .list li {
+    flex: 0 0 calc((100% - 20px) / 2.5);
+  }
+}
+
+/* 큰모바일 */
+@media (max-width: 768px) {
+  .con01 {
+    max-width: 100%;
+  }
+  .con01 .list li {
+    flex: 0 0 calc((100% - 20px) / 1.5);
+  }
+}
+
+/* 모바일 */
+@media (max-width: 400px) {
+  .con01 {
+    max-width: 100%;
+  }
+  .con01 .list li {
+    flex: 0 0 100%;
+  }
+}
