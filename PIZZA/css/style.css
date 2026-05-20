@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* header */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+ul {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+}
+header a {
+  padding: 10px;
+  display: block;
+}
+header a:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+/* visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/pizza.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.visual h2,
+h3,
+h4 {
+  font-size: 30px;
+  color: #fff;
+}
+.visual .wrap {
+  position: absolute;
+  left: 50%;
+  /* 왼쪽으로 부터 50% */
+  top: 50px;
+  /* 탑으로부터 50% */
+  transform: translateX(-50%, -50%);
+  /* 글자인 div가 가운데로 가기위해 공식처럼 외우기 */
+  text-align: center;
+}
+.visual div {
+  position: absolute;
+  bottom: 0px;
+}
